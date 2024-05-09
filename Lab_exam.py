@@ -190,7 +190,7 @@ def return_game(username):
                     game_library[game_id][game_name]["rented"] -= 1
 
                     cost_of_returned_game = game_library[game_id][game_name]["cost"]
-                    points_earned = float(cost_of_returned_game * 0.5) 
+                    points_earned = float(cost_of_returned_game * 0.5) #mas madali pag 0.5 points per dollar
                     user_accounts[username]["points"] += points_earned
 
                     user_accounts[username]["activities"].append(f"Returned {game_name}. Earned {points_earned} points.")
