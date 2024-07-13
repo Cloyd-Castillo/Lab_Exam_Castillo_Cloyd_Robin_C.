@@ -12,7 +12,7 @@ def admin_login():
     if username == "admin" and password == "adminpass":
         print("\nADMIN LOGIN SUCCESSFUL! \n")
         admin_menu()
-    else:
+    else: #adf
         print("Please put the correct information")
 
 def admin_menu():
